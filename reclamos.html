@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BROASTERIA VAZQUEZ - INICIO</title>
+    <link rel="icon" type="image/png" href="images/broasteria-Vasquez-modified.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Chelsea+Market&family=Rubik+Mono+One&display=swap" rel="stylesheet">
+</head>
+<body class="bg-light"> 
+    <header class="container-fluid p-0">
+        <nav class="navbar navbar-expand-lg escm-bg-orange escm-archivo-black-regular" data-bs-theme="dark">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="images/broasteria-Vasquez-modified.png" alt="pollologo" width="70">
+                    </a>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link" href="cartas.html">CARTA</a>
+                            <a class="nav-link dropdown-toggle escm_dropdown_arrow" data-bs-toggle="dropdown" aria-expanded="false"></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="cartas.html#extremos">PLATOS EXTREMOS</a></li>
+                                <li><a class="dropdown-item" href="cartas.html#promociones">PROMOCIONES</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="cartas.html#menus">MENUS</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="conocenos.html">CONOCENOS</a></li>
+                        <li class="nav-item"><a class="nav-link" href="ubicanos.html">UBICANOS</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">INICIO</a></li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Buscar..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">Buscar</button>
+                    </form>
+                </div>
+                <div class="ms-3">
+                    <a href="ayuda.html" class="btn btn-light escm_btn_header" type="button">Ayuda</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="container my-5" style="max-width: 650px;">
+            <div class="card shadow-sm p-4 bg-white rounded">
+                
+                <!-- ENCABEZADO -->
+                <div class="text-center mb-4">
+                    <h1 class="h3 text-warning fw-bold text-uppercase">Brostería Vazques</h1>
+                    <h2 class="h5 text-secondary">Libro de Reclamaciones Virtual</h2>
+                    <p class="text-muted small mb-0">Hoja de Reclamación N°: <span id="numero-reclamo" class="fw-bold text-dark">000001-2026</span></p>
+                </div>
+                
+                <hr class="mb-4">
+
+                
+                <form action="/enviar-reclamo" method="POST">
+
+                   
+                    <fieldset class="mb-4">
+                        <legend class="h5 text-dark border-bottom pb-2 mb-3 fw-semibold">1. Identificación del Consumidor</legend>
+                        
+                        <div class="mb-3">
+                            <label for="nombre" class="form-label fw-bold small">Nombres y Apellidos *</label>
+                            <input type="text" class="form-control" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                        </div>
+
+                        <div class="row">
+                            <div class="col-md-5 mb-3">
+                                <label for="tipo_doc" class="form-label fw-bold small">Tipo de Documento *</label>
+                                <select class="form-select" id="tipo_doc" name="tipo_doc" required>
+                                    <option value="DNI">DNI</option>
+                                    <option value="CE">Carnet de Extranjería</option>
+                                    <option value="RUC">RUC</option>
+                                </select>
+                            </div>
+                            <div class="col-md-7 mb-3">
+                                <label for="num_doc" class="form-label fw-bold small">Número de Documento *</label>
+                                <input type="text" class="form-control" id="num_doc" name="num_doc" required>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="telefono" class="form-label fw-bold small">Teléfono / Celular *</label>
+                            <input type="text" class="form-control" id="telefono" name="telefono" required>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="email" class="form-label fw-bold small">Correo Electrónico *</label>
+                            <input type="email" class="form-control" id="email" name="email" required placeholder="ejemplo@correo.com">
+                            <div class="form-text text-muted small">Aquí te llegará una copia de tu reclamo automáticamente.</div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="direccion" class="form-label fw-bold small">Domicilio (Opcional)</label>
+                            <input type="text" class="form-control" id="direccion" name="direccion">
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="mb-4">
+                        <legend class="h5 text-dark border-bottom pb-2 mb-3 fw-semibold">2. Identificación del Bien Contratado</legend>
+                        
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small d-block">Tipo de Bien *</label>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tipo_bien" id="bien_producto" value="Producto" checked>
+                                <label class="form-check-label" for="bien_producto">Producto (Comida/Bebida)</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="tipo_bien" id="bien_servicio" value="Servicio">
+                                <label class="form-check-label" for="bien_servicio">Servicio (Atención/Delivery)</label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="monto" class="form-label fw-bold small">Monto Reclamado (S/.) *</label>
+                            <input type="number" class="form-control" id="monto" name="monto" step="0.10" required placeholder="0.00">
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="descripcion_bien" class="form-label fw-bold small">Descripción del producto o servicio comprado *</label>
+                            <input type="text" class="form-control" id="descripcion_bien" name="descripcion_bien" required placeholder="Ej. Combo Mostrito Personal">
+                        </div>
+                    </fieldset>
+
+                 
+                    <fieldset class="mb-4">
+                        <legend class="h5 text-dark border-bottom pb-2 mb-3 fw-semibold">3. Detalle de la Reclamación</legend>
+                        
+                        <div class="mb-3">
+                            <label class="form-label fw-bold small d-block">Tipo de Incidencia *</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipo_incidencia" id="incidencia_reclamo" value="Reclamo" checked>
+                                <label class="form-check-label" for="incidencia_reclamo">
+                                    <strong>Reclamo:</strong> Disconformidad con el producto.
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="tipo_incidencia" id="incidencia_queja" value="Queja">
+                                <label class="form-check-label" for="incidencia_queja">
+                                    <strong>Queja:</strong> Descontento por el servicio o atención.
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="detalle" class="form-label fw-bold small">Detalle del Reclamo o Queja *</label>
+                            <textarea class="form-control" id="detalle" name="detalle" rows="4" required placeholder="Explica detalladamente qué sucedió..."></textarea>
+                        </div>
+
+                        <div class="mb-3">
+                            <label for="pedido" class="form-label fw-bold small">Pedido del Consumidor *</label>
+                            <textarea class="form-control" id="pedido" name="pedido" rows="2" required placeholder="¿Qué solicitas? (Ej. Devolución de dinero, cambio de producto)"></textarea>
+                        </div>
+                    </fieldset>
+
+                    
+                    <div class="d-grid gap-2 mt-4">
+                        <button type="submit" class="btn btn-warning btn-lg fw-bold text-uppercase text-white">Enviar Reclamación</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+ </main>
+<footer class="escm-bg-footer py-5 text-light">
+        <div class="container">
+            <div class="row gy-4 align-items-center text-center text-md-start">
+                <div class="col-12 col-md-4 text-center">
+                    <img src="images/broasteria-Vasquez-modified.png" alt="Broastería Vásquez" width="130" class="mb-3 img-fluid">
+                    <p class="small mb-0">El verdadero placer del pollo crujiente.</p>
+                </div>
+                <div class="col-12 col-md-4">
+                    <h5 class="text-uppercase fw-bold mb-3">Contáctanos</h5>
+                    <hr class="border-secondary my-2 w-25 mx-auto mx-md-0 opacity-50">
+                    <ul class="list-unstyled mb-0">
+                        <li class="mb-2">Dirección: Av. 2 de Mayo 1411, San Isidro</li>
+                        <li class="mb-2">Teléfono: 966 655 666</li>
+                        <li>Horario: Lun - Dom: 12:00 PM - 11:00 PM</li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-4 text-md-end">
+                    <h5 class="text-uppercase fw-bold mb-3">Legal</h5>
+                    <hr class="border-secondary my-2 w-25 ms-auto me-auto me-md-0 opacity-50">
+                    <p class="small mb-2">&copy; 2026 Todos los derechos reservados.</p>
+                    <p class="small mb-0">Desarrollado por <span class="fw-bold">Erick Cabrera</span></p>
+                    <hr class="border-secondary my-2 w-25 ms-auto me-auto me-md-0 opacity-50">
+                    <p class="h2">Libro de <br> reclamaciones 
+                    </p>
+                    <a href="reclamos.html"><img src="images/images (2).png" alt="libro" width="100" class="text-center"></a>
+                </div>
+            </div>
+            <hr class="border-secondary mt-5 mb-0 opacity-50">
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

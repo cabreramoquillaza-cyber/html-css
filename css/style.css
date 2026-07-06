@@ -1,0 +1,228 @@
+*{
+    margin: 0;
+    margin-left: 0;
+    padding-left: 0%;
+    padding: 0%;
+}
+
+.escm_bg_fond {
+  background-color: antiquewhite;
+}
+main{
+    margin: 0%;
+    padding: 0%;
+}
+.bg_btn_header{
+    margin-bottom: 3px;
+}
+    
+header{
+    margin: 0;
+    z-index: 20;
+    background-color: beige;
+}
+
+.escm-bg-orange{
+    background-color: rgb(245, 122, 40);
+}
+.escm-archivo-black-regular {
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.escm-chelsea-market-regular {
+  font-family: "Chelsea Market", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+.escm-rubik-mono-one-regular {
+  font-family: "Rubik Mono One", monospace !important;
+  font-weight: 400 !important;
+  font-style: normal !important;
+}
+.escm-carousel{
+    max-height: 700px;
+}
+.escm-bg-img{
+    background-color: rgba(243, 236, 236, 0.726);
+    
+
+}
+.escm-bg-footer{
+    background-color: rgba(251, 183, 95, 0.484);
+}
+.escm-img-footer{
+    width: 150px;
+    height: auto;
+}
+.escm-carrusel-inicio{
+   
+    max-height: 600px;
+}
+
+
+
+.escm-bg-orange {
+  background-color: #ff6600 !important; 
+}
+
+.escm_bg_fond {
+  background-color: #f4f4f6; 
+}
+
+.escm-bg-footer {
+  background-color: #1a1a1a !important; 
+}
+
+.escm_btn_header {
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
+.escm-carrusel-inicio img {
+  height: auto;
+  max-height: 480px;
+  object-fit: cover;
+}
+
+.escm_banner_carta {
+  border-left: 8px solid #ff6600;
+}
+
+.escm_img_carta {
+  height: 200px;
+  object-fit: cover;
+}
+
+.escm_hr_ayuda {
+  border: 3px solid #ff6600;
+  width: 80px;
+  opacity: 1;
+  border-radius: 10px;
+}
+
+.escm_paso_card {
+  background-color: #fff;
+  border: 2px solid #f0f0f0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.escm_paso_card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.12) !important;
+  border-color: #ff6600;
+}
+
+.escm_paso_icono {
+  font-size: 2rem;
+}
+
+
+
+.escm_accordion_item {
+  border-left: 5px solid #ff6600 !important;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.escm_accordion_btn {
+  background-color: #fff !important;
+  color: #1a1a1a !important;
+  font-size: 0.95rem;
+}
+
+.escm_accordion_btn:not(.collapsed) {
+  background-color: #fff7f0 !important;
+  color: #ff6600 !important;
+  box-shadow: none !important;
+}
+
+.escm_accordion_btn::after {
+  filter: brightness(0.4);
+}
+
+.escm_accordion_body {
+  background-color: #fafafa;
+  border-top: 1px solid #f0e8e0;
+}
+
+.escm_acc_badge {
+  font-size: 0.72rem;
+  padding: 4px 10px;
+  border-radius: 20px;
+  white-space: nowrap;
+  font-family: "Archivo Black", sans-serif;
+}
+
+.escm_badge_orange {
+  background-color: #ff6600;
+}
+
+.escm_lista_acc {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.escm_lista_acc li {
+  padding: 6px 0;
+  border-bottom: 1px dashed #eee;
+  font-size: 0.9rem;
+}
+
+.escm_lista_acc li:last-child {
+  border-bottom: none;
+}
+
+.escm_acc_img {
+  max-height: 160px;
+  width: 100%;
+  object-fit: cover;
+  border: 2px solid #f0e8e0;
+}
+
+.escm_pago_tag {
+  background-color: #fff;
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.escm_pago_tag:hover {
+  background-color: #fff3e0;
+}
+
+
+.escm_btn_llamar {
+  font-size: 1.1rem;
+  border-radius: 30px;
+  letter-spacing: 1px;
+}
+
+
+.escm_video_carta {
+  border: 4px solid #ff6600;
+}
+
+
+.escm_dropdown_arrow {
+  padding-left: 4px;
+  padding-right: 8px;
+}
+
+
+.escm_img_destacado {
+  width: 75%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.escm-img-carrusel-carta {
+  height: 300px; 
+  object-fit: cover; 
+  width: 100%; 
+}
